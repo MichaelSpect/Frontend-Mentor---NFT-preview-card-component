@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+$color-primary__light-1: hsl(215, 51%, 70%);
+$color-primary__light-2: hsl(178, 100%, 50%);
+$color__dark-1: hsl(217, 54%, 11%);
+$color__dark-2: hsl(216, 50%, 16%);
+$color__dark-3: hsl(215, 32%, 27%);
+$color__white: hsl(0, 0%, 100%);
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: $color__dark-1;
+  color: $color-primary__light-1;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
