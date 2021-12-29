@@ -44,8 +44,48 @@ main {
   border-radius: 15px;
 }
 
-.card-container img.img-header {
+.card-container .img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 10px;
+  position: relative;
+}
+
+.card-container .img-container .opacity-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(0, 255, 247, 0.425);
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.card-container .img-container .opacity-overlay:hover {
+  opacity: 1;
+}
+
+.card-container .img-container .opacity-overlay svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.card-container .img-container .img-header {
+  border-radius: 10px;
+  width: 100%;
 }
 
 .card-container h2 {
@@ -53,6 +93,11 @@ main {
   color: white;
   font-weight: 600;
   margin: 20px 0;
+}
+
+.card-container h2:hover {
+  color: #00fff7;
+  cursor: pointer;
 }
 
 .card-container p {
@@ -110,6 +155,11 @@ main {
 
 .card-container .card-footer span {
   color: white;
+}
+
+.card-container .card-footer span:hover {
+  color: #00fff7;
+  cursor: pointer;
 }
 
 .attribution {
