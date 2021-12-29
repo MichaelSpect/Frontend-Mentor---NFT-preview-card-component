@@ -42,7 +42,7 @@ Users should be able to:
 - Flexbox
 - Desktop-first workflow
 
-## Author - Michael Spect (aka Miodrag Mladenovic)
+## Author - Michael Spect (Miodrag Mladenovic)
 
 - Website - [Miodrag Mladenovic](https://www.miodragmladenovic.com)
 - My Music Website - [SoundSpect Music](https://soundspect.com)
